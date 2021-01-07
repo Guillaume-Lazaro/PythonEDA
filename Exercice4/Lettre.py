@@ -14,9 +14,9 @@ class Lettre(Courrier):
             tarifDeBase = 3.50
 
         if self.expMode == "normal" or self.expMode == "Normal":
-            return tarifDeBase + self.poids
+            return tarifDeBase + (self.poids/1000)
         elif self.expMode == "express" or self.expMode == "Express":
-            return tarifDeBase + (2.0 * self.poids)
+            return tarifDeBase + (2.0 * (self.poids/1000))
 
     def ToString(self):
         print("Lettre: ")

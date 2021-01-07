@@ -9,5 +9,5 @@ class Courrier:
     def ToString(self):
         print("Adresse destination: {}".format(self.adrDest))
         print("Adresse expédition: {}".format(self.adrExp))
-        print("Poids: {}".format(self.poids))
+        print("Poids: {} grammes".format(self.poids))
         print("Mode: {}".format(self.expMode))
